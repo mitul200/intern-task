@@ -1,8 +1,13 @@
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
+
+// import "swiper/swiper.min.css";
+// // Other csss used to clone the demo.
+
+// import "swiper/modules/free-mode/free-mode.min.css";
+// import "swiper/modules/navigation/navigation.scss";
 
 import { useState } from "react";
 
@@ -22,7 +27,8 @@ const ProductsSlider = () => {
         <Swiper
           spaceBetween={16}
           grabCursor={true}
-          centeredSlides={true} // globally ON
+          centeredSlides={true}
+          initialSlide={Math.floor(images.length / 2)} // globally ON
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           className="w-full"
           breakpoints={{
@@ -49,8 +55,8 @@ const ProductsSlider = () => {
                 className={`transition-all duration-500 overflow-hidden mx-auto
           ${
             index === activeIndex
-              ? "w-[85vw] sm:w-[340px] md:w-[400px] lg:w-[457px] h-[240px] sm:h-[270px] md:h-[300px] lg:h-[330px]"
-              : "w-[75vw] sm:w-[320px] md:w-[370px] lg:w-[457px] h-[200px] sm:h-[250px] md:h-[280px] lg:h-[306px]"
+              ? "w-[85vw] scale-105 sm:w-[340px] md:w-[400px] lg:w-[457px] h-[240px] sm:h-[270px] md:h-[300px] lg:h-[330px]"
+              : "w-[75vw] scale-95 sm:w-[320px] md:w-[370px] lg:w-[457px] h-[200px] sm:h-[250px] md:h-[280px] lg:h-[306px]"
           }`}
               >
                 <img
