@@ -1,13 +1,18 @@
 import Banner from "./components/Banner";
+import CardSection from "./components/CardSection";
+
 import ProductsSlider from "./components/ProductsSlider";
 // import Navber from "./components/Navber";
 
 function App() {
   return (
-    <div className=" max-w-[1480px] ">
+    <>
       <Banner />
-      <ProductsSlider />
-    </div>
+      <div className=" max-w-[1480px] mx-auto ">
+        <ProductsSlider />
+        <CardSection />
+      </div>
+    </>
   );
 }
 

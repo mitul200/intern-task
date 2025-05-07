@@ -9,21 +9,6 @@ import duet from "../assets/duet.png";
 const Banner = () => {
   return (
     <>
-      {/* <section className=" ">
-        <div className="">
-          <Navbar />
-          <img src={bannerImg} className="h-fit w-full relative" alt="" />
-        </div>
-
-        <div className=" h-[380px] w-[740px] absolute top-40 left-auto right-auto">
-          <h1 className=" text-7xl font-bold">
-            We Shape Your Ideas Into
-            <span>Awesome Digital </span>
-            <span className=" text-center">Experience</span>
-          </h1>
-        </div>
-      </section> */}
-
       <section className="relative w-screen h-screen overflow-hidden">
         {/* Background Image */}
         <div className="absolute top-0 left-0 w-full h-full -z-10">
