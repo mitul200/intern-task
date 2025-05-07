@@ -16,6 +16,9 @@ import image1 from "../assets/image.png";
 import image2 from "../assets/image1.png";
 import image3 from "../assets/image2.png";
 
+import leftSlider from "../assets/leftSlider.png";
+import rightSlider from "../assets/rightSlider.png";
+
 const images = [image1, image2, image3, image1, image2];
 
 const ProductsSlider = () => {
@@ -23,7 +26,21 @@ const ProductsSlider = () => {
 
   return (
     <div className="w-full py-8 px-4">
-      <div className="w-full max-w-[1640px] mx-auto flex justify-center items-center">
+      <div className="w-full max-w-[1640px] mx-auto flex justify-center items-center relative">
+        <div className=" absolute top-0 z-10  left-32 transform -translate-x-1/2">
+          <img
+            src={leftSlider}
+            className="h-[200px] sm:h-[250px] md:h-[280px] lg:h-[306px]"
+            alt=""
+          />
+        </div>
+        <div className=" absolute top-0 z-10  -right-36 transform -translate-x-1/2">
+          <img
+            src={rightSlider}
+            className="h-[200px] sm:h-[250px] md:h-[280px] lg:h-[306px]"
+            alt=""
+          />
+        </div>
         <Swiper
           spaceBetween={16}
           grabCursor={true}

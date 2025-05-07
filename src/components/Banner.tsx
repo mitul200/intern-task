@@ -27,10 +27,23 @@ const Banner = () => {
         {/* Centered Text */}
         <div className="flex items-center w-full justify-center h-full px-4 text-center ">
           <div className="text-white space-y-8 ">
-            <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl  leading-[120%] font-rethink">
-              We Shape Your Ideas Into{" "}
-              <span className="block text-primary">Awesome Digital</span>
-              <span className="block">Experience</span>
+            <h1
+              className="bg-[radial-gradient(57.43%_313.9%_at_48.8%_59.03%,_#FFFFFF_50.47%,_rgba(255,_255,_255,_0.5)_100%)]
+                bg-clip-text text-transparent font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl  leading-[120%] font-rethink"
+            >
+              We Shape Your Ideas Into
+              <span
+                className="block text-primary bg-[radial-gradient(57.43%_313.9%_at_48.8%_59.03%,_#FFFFFF_56.47%,_rgba(255,_255,_255,_0.5)_100%)]
+                bg-clip-text text-transparent"
+              >
+                Awesome Digital
+              </span>
+              <span
+                className="block bg-[radial-gradient(57.43%_313.9%_at_48.8%_59.03%,_#FFFFFF_56.47%,_rgba(255,_255,_255,_0.5)_100%)]
+                bg-clip-text text-transparent"
+              >
+                Experience
+              </span>
             </h1>
             <p
               className="text-center font-rethink font-medium leading-[120%] tracking-normal 
@@ -39,14 +52,7 @@ const Banner = () => {
             >
               Lorem ipsum dolor sit amet consectetur. Eget at at nunc lorem.
             </p>
-            <button
-              className="bg-gradient-to-r from-[#73BFFA] to-[#3C97F5]
-             text-white px-12 py-6 rounded-full font-semibold text-[20px]
-              leading-[120%] tracking-normal font-rethink transition duration-500
-               hover:opacity-45 "
-            >
-              Book a call with us
-            </button>
+            <button className="banner-btn">Book a call with us</button>
           </div>
         </div>
 

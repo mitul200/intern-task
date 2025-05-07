@@ -10,12 +10,30 @@ body {
   @apply w-[151px] h-[56px] py-[12px] px-[24px] rounded-[56px] 
          border border-white/10 bg-[#93D1FD1A] backdrop-blur-[40px] 
          text-white  font-medium text-[24px] 
+         transition duration-500
+    hover:opacity-45
          leading-[75%] flex items-center justify-center gap-2;
 }
 .card-btn-sm {
   @apply w-fit h-fit pt-[7.91px] pr-[15.81px] pb-[7.91px] pl-[15.81px] 
   rounded-[36.89px]   border-white/10 border-[0.66px] 
   bg-[#93D1FD1A] backdrop-blur-[40px] 
-  text-white  font-medium text-[16px] 
+  text-white  font-medium text-[16px]
+  transition duration-500
+    hover:opacity-45 
   leading-[75%] tracking-normal flex items-center justify-center gap-[5.27px];
+}
+
+.banner-btn {
+  @apply bg-gradient-to-r from-[#73BFFA] to-[#3C97F5]
+  text-white px-12 py-6 rounded-full font-semibold text-[20px]
+   leading-[120%] tracking-normal font-rethink transition duration-500
+    hover:opacity-45;
+}
+
+.view-btn {
+  @apply inline-flex items-center justify-center gap-[8px] 
+  py-8 px-10 rounded-[48px] transition duration-500
+  hover:opacity-45
+  bg-gradient-to-r from-[#73BFFA] to-[#3C97F5];
 }

@@ -190,11 +190,7 @@ const CardSection = () => {
         </div>
       </div>
       <div className=" flex justify-center items-center lg:mt-24 mt-12">
-        <button
-          className="inline-flex items-center justify-center gap-[8px] 
-    py-8 px-10 rounded-[48px] 
-    bg-gradient-to-r from-[#73BFFA] to-[#3C97F5]"
-        >
+        <button className="view-btn">
           <span className="w-[97px] h-[15px] font-[Rethink Sans] font-medium text-[20px] leading-[75%] text-white">
             View more
           </span>
