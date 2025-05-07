@@ -176,7 +176,7 @@ const AccordionFeatures = () => {
           </div>
         </div> */}
         <div className="flex items-center justify-center w-full">
-          <div className="flex flex-col gap-4 sm:gap-5 mx-auto max-w-[1140px] w-full px-4 sm:px-6 md:px-10">
+          <div className="flex flex-col gap-4 sm:gap-5 mx-auto max-w-[1480px] w-full px-4 sm:px-6 md:px-10">
             {accorditationData.map((item) => (
               <AccordionItem
                 key={item.id}
