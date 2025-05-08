@@ -22,12 +22,12 @@ Clone the repo
 
 git clone https://github.com/mitul200/intern-task.git
 
-cd intern-task
+======>  cd intern-task
 
--Install dependencies
+-Install dependencies =====>
 npm install
 
-Start the development server
+Start the development server =====> 
 npm run dev
 
 live server : https://intern-task-9zwe.vercel.app/
