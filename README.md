@@ -30,4 +30,5 @@ npm install
 Start the development server
 npm run dev
 
-live server : 
+live server : https://intern-task-9zwe.vercel.app/
+
