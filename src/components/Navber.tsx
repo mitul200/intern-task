@@ -28,15 +28,6 @@ const Navbar = () => {
               {item}
             </Link>
           ))}
-          <Link
-            activeClass="active"
-            smooth={true}
-            spy={true}
-            to="contact"
-            className="cursor-pointer px-4 py-2 hover:text-white/50 transition text-xl font-dm font-medium"
-          >
-            <BsClipboardData />
-          </Link>
         </div>
 
         {/* Mobile Menu Icon */}

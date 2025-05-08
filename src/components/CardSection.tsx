@@ -13,7 +13,7 @@ import bottomLeft from "../assets/bottomLeft.png";
 import { MdArrowOutward } from "react-icons/md";
 const CardSection = () => {
   return (
-    <section className=" mb-32  h-full w-full relative" id="content">
+    <section className=" mb-32  h-full w-full relative">
       <div className="w-full bg-black py-10 sm:py-20">
         <div className="flex justify-center items-center">
           <div className="relative w-[90%] sm:w-[840px] h-[300px] sm:h-[342px] overflow-hidden rounded-xl">
@@ -39,7 +39,10 @@ const CardSection = () => {
             />
 
             {/* Content */}
-            <div className="relative z-20 w-full h-full flex flex-col justify-center items-center text-center px-4">
+            <div
+              id="blog"
+              className="relative z-20 w-full h-full flex flex-col justify-center items-center text-center px-4"
+            >
               <h1
                 className="text-[28px] sm:text-[48px] font-bold leading-snug tracking-tight 
                 font-[Rethink Sans]

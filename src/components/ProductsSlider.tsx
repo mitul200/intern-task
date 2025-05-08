@@ -3,12 +3,6 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 
-// import "swiper/swiper.min.css";
-// // Other csss used to clone the demo.
-
-// import "swiper/modules/free-mode/free-mode.min.css";
-// import "swiper/modules/navigation/navigation.scss";
-
 import { useState } from "react";
 
 // Import your images
@@ -25,7 +19,7 @@ const ProductsSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="w-full py-8 px-4">
+    <div className="w-full py-8 px-4 " id="about">
       <div className="w-full max-w-[1640px] mx-auto flex justify-center items-center relative">
         <div className=" absolute top-0 z-10  left-32 transform -translate-x-1/2">
           <img
