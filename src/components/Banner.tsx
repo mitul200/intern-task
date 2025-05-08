@@ -9,7 +9,7 @@ import duet from "../assets/duet.png";
 const Banner = () => {
   return (
     <>
-      <section className="relative w-screen h-screen overflow-hidden">
+      <section className="relative w-screen h-screen overflow-hidden" id="work">
         {/* Background Image */}
         <div className="absolute top-0 left-0 w-full h-full -z-10">
           <img

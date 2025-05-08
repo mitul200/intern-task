@@ -64,16 +64,14 @@ const Footer = () => {
     //   </div>
     // </div>
 
-    <div className="w-full relative bg-black px-4   py-8 ">
+    <div className="w-full relative bg-black px-4 py-8 ">
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2">
         <img src={bgfooter} alt="" />
       </div>
       <div className="absolute top-0 z-30 left-0 transform -translate-x-1/2">
         <img src={footerleft} alt="" />
       </div>
-      <div className="absolute top-0 right-0 translate-x-1/2">
-        <img src={footerright} alt="" />
-      </div>
+
       <div className="absolute bottom-0 -z-10 left-1/2 transform -translate-x-1/2">
         <img src={footerbottom} alt="" />
       </div>

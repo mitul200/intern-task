@@ -4,6 +4,7 @@ import CardSection from "./components/CardSection";
 import Footer from "./components/Footer";
 
 import ProductsSlider from "./components/ProductsSlider";
+// import ServiceFeactures from "./components/serviceFeactures";
 // import Navber from "./components/Navber";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Banner />
       <div className="  mx-auto ">
         <ProductsSlider />
+        {/* <ServiceFeactures /> */}
         <CardSection />
         <AccordianFeactures />
         <Footer />

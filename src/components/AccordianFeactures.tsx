@@ -119,7 +119,7 @@ const AccordionFeatures = () => {
 
   return (
     <>
-      <div className="min-h-screen">
+      <div className="min-h-screen" id="about">
         <div className="w-full bg-black pt-10 sm:pt-10">
           <div className="flex justify-center items-center">
             <div className="relative w-[90%] sm:w-[840px] h-[300px] sm:h-[342px] overflow-hidden rounded-xl">
