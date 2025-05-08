@@ -1,7 +1,34 @@
 import bgfooter from "../assets/bgfooter.png";
 import footerleft from "../assets/footerleft.png";
-
 import footerbottom from "../assets/footerbottom.png";
+
+const openGitHubProfile = () => {
+  window.open("https://github.com/mitul200", "_blank", "noopener,noreferrer");
+};
+
+const openLinkDingProfile = () => {
+  window.open(
+    "https://www.linkedin.com/in/khaled-bin-mahamud-530405313/",
+    "_blank",
+    "noopener,noreferrer"
+  );
+};
+const openFaceBookProfile = () => {
+  window.open(
+    "https://www.facebook.com/khalad.bin.18",
+    "_blank",
+    "noopener,noreferrer"
+  );
+};
+
+const openInstagramProfile = () => {
+  window.open(
+    "https://www.instagram.com/khalad.bin.mahabub_/",
+    "_blank",
+    "noopener,noreferrer"
+  );
+};
+
 const Footer = () => {
   return (
     <div className="w-full relative bg-black px-4 py-8 ">
@@ -37,11 +64,21 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col gap-2 sm:gap-1 text-white">
-            <p className="font-rethink underline">Facebook</p>
-            <p className="font-rethink underline">Instagram</p>
-            <p className="font-rethink underline">LinkedIn</p>
-            <p className="font-rethink underline">GitHub</p>
-            <p className="font-rethink underline">Twitter</p>
+            <div onClick={openFaceBookProfile}>
+              <p className="font-rethink underline">Facebook</p>
+            </div>
+            <div onClick={openGitHubProfile}>
+              <p className="font-rethink underline">GitHub</p>
+            </div>
+            <div onClick={openInstagramProfile}>
+              <p className="font-rethink underline">Instagram</p>
+            </div>
+            <div>
+              <p className="font-rethink underline">LinkedIn</p>
+            </div>
+            <div>
+              <p className="font-rethink underline">Twitter</p>
+            </div>
           </div>
         </div>
 
