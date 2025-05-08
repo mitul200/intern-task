@@ -6,13 +6,6 @@ const openGitHubProfile = () => {
   window.open("https://github.com/mitul200", "_blank", "noopener,noreferrer");
 };
 
-const openLinkDingProfile = () => {
-  window.open(
-    "https://www.linkedin.com/in/khaled-bin-mahamud-530405313/",
-    "_blank",
-    "noopener,noreferrer"
-  );
-};
 const openFaceBookProfile = () => {
   window.open(
     "https://www.facebook.com/khalad.bin.18",

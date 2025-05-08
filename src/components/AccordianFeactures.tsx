@@ -36,44 +36,19 @@ const accorditationData = [
   },
 ];
 
-// function AccordionItem({ id, title, content, isExpanded, onToggle }) {
-//   return (
-//     <div
-//       style={{
-//         background:
-//           "linear-gradient(90deg, rgba(115, 191, 250, 0.2) 0%, rgba(10, 10, 10, 0) 100%)",
-//       }}
-//       className={`rounded-lg overflow-hidden transition-all duration-300 ${
-//         isExpanded ? "max-h-96" : "max-h-20"
-//       }`}
-//     >
-//       <div
-//         className="flex justify-between items-start cursor-pointer p-6"
-//         onClick={onToggle}
-//       >
-//         <div className="text-2xl font-semibold text-white font-rethink">
-//           <span className="text-[#3C97F5] mr-2">{id}</span>
-
-//           {title}
-//         </div>
-//         <MdArrowOutward
-//           className={`text-4xl text-white transition-transform duration-300 ${
-//             isExpanded ? "rotate-90" : ""
-//           }`}
-//         />
-//       </div>
-
-//       <div
-//         className={`px-6 pb-6 text-white transition-opacity duration-300 ${
-//           isExpanded ? "opacity-100" : "opacity-0"
-//         }`}
-//       >
-//         {content}
-//       </div>
-//     </div>
-//   );
-// }
-function AccordionItem({ id, title, content, isExpanded, onToggle }) {
+function AccordionItem({
+  id,
+  title,
+  content,
+  isExpanded,
+  onToggle,
+}: {
+  title: string;
+  id: number;
+  content: string;
+  isExpanded: boolean;
+  onToggle: () => void;
+}) {
   return (
     <div
       style={{
@@ -111,9 +86,9 @@ function AccordionItem({ id, title, content, isExpanded, onToggle }) {
 }
 
 const AccordionFeatures = () => {
-  const [expandedId, setExpandedId] = useState(null);
+  const [expandedId, setExpandedId] = useState<number | null>(null);
 
-  const toggleExpand = (id) => {
+  const toggleExpand = (id: number | null) => {
     setExpandedId((prevId) => (prevId === id ? null : id));
   };
 
