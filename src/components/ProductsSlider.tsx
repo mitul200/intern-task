@@ -11,7 +11,7 @@ import image2 from "../assets/image1.png";
 import image3 from "../assets/image2.png";
 
 import leftSlider from "../assets/leftSlider.png";
-import rightSlider from "../assets/rightSlider.png";
+import rightSlider from "../assets/rightslider.png";
 
 const images = [image1, image2, image3, image1, image2];
 
