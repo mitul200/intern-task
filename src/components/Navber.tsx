@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BsClipboardData } from "react-icons/bs";
 import { HiMenu, HiX } from "react-icons/hi";
-import logo from "../assets/Logo.png";
+import logo from "../assets/logo.png";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
